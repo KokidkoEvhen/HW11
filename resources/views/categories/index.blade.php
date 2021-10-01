@@ -3,6 +3,8 @@
 @section('title', 'Категории')
 
 @section('body')
+    <h1>Categories</h1>
+
     <a href="form.php">Add</a>
     <table class="table">
         <thead>
