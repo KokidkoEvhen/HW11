@@ -4,7 +4,7 @@ require_once '../../vendor/autoload.php';
 require_once '../../config/eloquent.php';
 require_once '../../config/blade.php';
 
-$category = \Hillel\Models\Category::find($_GET['id']);
-$category->delete();
+$post = \Hillel\Models\Post::find($_GET['id']);
+$post->delete();
 
-header('Location: /categories');
+header('Location: /posts');

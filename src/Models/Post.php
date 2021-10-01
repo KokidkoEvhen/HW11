@@ -11,7 +11,8 @@ class Post extends Model
         'slug',
         'body',
         'category_id'
-        ];
+    ];
+
     public function category()
     {
         return $this->belongsTo(Category::class);
